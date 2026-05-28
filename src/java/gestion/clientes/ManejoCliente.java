@@ -4,7 +4,7 @@
  */
 package gestion.clientes;
 
-import java.io.IOException;
+
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.FileWriter;
-
+import java.io.IOException;
 /**
  *
  * @author Ambar
@@ -46,6 +46,11 @@ public class ManejoCliente extends HttpServlet {
             
           //Handling File creation from user's input (Creacion del archivo a partir del input del usuario)
          
+        
+          
+          
+          
+         try{
           //instancia de cliente 
           cliente cliente1 = new cliente();
             
@@ -55,15 +60,32 @@ public class ManejoCliente extends HttpServlet {
           cliente1.categoria = request.getParameter("categoria");
           cliente1.direccion = request.getParameter("direccion");
      
-          
           //Crear archivo 
-          
-          try(){
+          String ruta = request.getParameter("ruta");
+         
+             
+             
+             
+             
+             
+             
+             
+             
+          try(FileWriter writer = new FileWriter(ruta)){
               
-          }catch(){
               
-          }
-          
+              
+              
+              
+              
+              writer.write("Empleado ");
+              writer.write(id);
+              
+              out.println("El archivo se ha creado exitosamente!");
+  
+           }catch(IOException e){
+              out.println("No se pudo crear el archivo");
+           }
           
           
           
@@ -77,7 +99,7 @@ public class ManejoCliente extends HttpServlet {
             out.println("<h1>Servlet ManejoCliente at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
-            
+         
             
             
            
