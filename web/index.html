@@ -5,11 +5,30 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Cliente</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <main>
+                <div id="titulo">
+                <h1>Datos de Clientes</h1>
+            </div>
+            <section id="formulario">
+                <h2>Bienvenid@</h2>
+                <form action="/Cliente" method="post">
+                    <fieldset>
+                        <legend>Ingrese datos del cliente</legend>
+                        <input required placeholder="id" type="number" name="id"><br>
+                        <input required placeholder="Nombre" type="text" name="nombre"><br>
+                        <input required placeholder="Categoria" type="text" name="categoria"><br>
+                        <input required placeholder="Dirección" type="text" name="direccion"><br>
+                        <input type="submit" value="Enviar"><br>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <footer>Copyright Ambi 2026</footer>
     </body>
 </html>

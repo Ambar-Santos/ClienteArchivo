@@ -6,4 +6,8 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Created on : May 27, 2026, 7:57:36 PM
     Author     : Personal
 */
-
+*{
+    background-color: black;
+    color: white;
+    font-family: Abadi, Arial, comic-sans;
+}
