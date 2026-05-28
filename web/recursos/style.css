@@ -10,4 +10,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     background-color: black;
     color: white;
     font-family: Abadi, Arial, comic-sans;
+    text-align: center;
+    
+}
+
+
+input{
+    display: block;
+    width: 200px;
 }
