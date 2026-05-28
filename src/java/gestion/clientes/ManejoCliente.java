@@ -55,7 +55,7 @@ public class ManejoCliente extends HttpServlet {
          
          
           try(FileWriter writer = new FileWriter(ruta)){
-              writer.write("---- Datos de Cliente ----");
+              writer.write("---- Datos de Cliente ----\n");
               writer.write("ID: " + cliente1.id + "\n");
               writer.write("Nombre: " + cliente1.nombre + "\n");
               writer.write("Categoría: " + cliente1.id + "\n");
