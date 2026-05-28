@@ -16,7 +16,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
 
 fieldset{
     display: block;
-    width: 800px;
+    width: 500px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -29,6 +29,10 @@ input{
     margin-top: 4px;
    
 }
+.celda {
+   border: 0.5px solid white;
+   border-radius: 3px;
+}
 
 
 #ruta{
@@ -40,6 +44,5 @@ input{
 
 footer{
     margin-top: 5px;
-}.celda {
-
+    
 }
