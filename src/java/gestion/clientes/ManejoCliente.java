@@ -20,11 +20,6 @@ import java.io.IOException;
 
 
 
-
-
-
-
-
 @WebServlet(name = "ManejoCliente", urlPatterns = {"/ManejoCliente"})
 public class ManejoCliente extends HttpServlet {
 
@@ -74,17 +69,20 @@ public class ManejoCliente extends HttpServlet {
               out.println("</head>");
               out.println("<body>");
               out.println("<h1>Su cliente ha sido registrado con exito!!</h1>");
-              out.println("<p>Puede consultar el archivo en la ruta:" + ruta +"</p>");
+              out.println("<p>Puede consultar el archivo en la ruta: " + ruta +"</p>");
               
               //Mostrar datos del cliente en la web
               out.println("<h2>Datos del cliente</h2>");
               
-                out.println("<ul>");
-                out.println("<li>ID: " + cliente1.id +"<li>" );
-                out.println("<li>Nombre : " + cliente1.nombre +"<li>" );
-                out.println("<li>Categoría : " + cliente1.categoria +"<li>" );
-                out.println("<li>Dirección : " + cliente1.direccion +"<li>" );
-                out.println("</ul>");
+            
+                out.println("<p>ID: " + cliente1.id +"</p>" );
+        
+                out.println("<p>Nombre : " + cliente1.nombre +"</p>" );
+             
+                out.println("<p>Categoría : " + cliente1.categoria +"</p>" );
+        
+                out.println("<p>Dirección : " + cliente1.direccion +"</p>" );
+             
 
               out.println("</body>");
               out.println("</html>");
