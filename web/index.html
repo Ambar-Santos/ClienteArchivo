@@ -20,7 +20,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <form action="/Cliente" method="post">
                     <fieldset>
                         <legend>Ingrese datos del cliente</legend>
-                        <input required placeholder="id" type="number" name="id"><br>
+                        <input required min="100000" max="999999" placeholder="ID(Ej: 8920)" type="number" name="id"><br>
                         <input required placeholder="Nombre" type="text" name="nombre"><br>
                         <input required placeholder="Categoria" type="text" name="categoria"><br>
                         <input required placeholder="Dirección" type="text" name="direccion"><br>
