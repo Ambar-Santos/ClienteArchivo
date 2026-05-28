@@ -42,13 +42,8 @@ public class ManejoCliente extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
       
-            
-            
           //Handling File creation from user's input (Creacion del archivo a partir del input del usuario)
-         
-        
-          
-          
+     
           
          try{
           //instancia de cliente 
@@ -93,32 +88,24 @@ public class ManejoCliente extends HttpServlet {
 
               out.println("</body>");
               out.println("</html>");
-         
-           
-  
-           }catch(IOException e){
-              out.println("<!DOCTYPE html>");
-              out.println("<html>");
-              out.println("<head>");
-              out.println("<title>Error</title>");
-              out.println("</head>");
-              out.println("<body>");
-              out.println("<h1>Error al crear el archivo</h1>");
-              out.println("<p>" + e.getMessage() + "<p>");
-              out.println("</body>");
-              out.println("</html>");
-         
-           }
           
-          
-          
-            
-        
-            
-           
-        }
-    }
+            }
+         }catch(IOException e){
+           out.println("<!DOCTYPE html>");
+           out.println("<html>");
+           out.println("<head>");
+           out.println("<title>Error</title>");
+           out.println("</head>");
+           out.println("<body>");
+           out.println("<h1>Error al crear el archivo</h1>");
+           out.println("<p>" + e.getMessage() + "<p>");
+           out.println("</body>");
+           out.println("</html>");
 
+                 }
+          }
+    }
+        
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
