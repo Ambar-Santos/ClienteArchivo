@@ -11,11 +11,20 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import java.io.FileWriter;
 
 /**
  *
  * @author Ambar
  */
+
+
+
+
+
+
+
+
 @WebServlet(name = "ManejoCliente", urlPatterns = {"/ManejoCliente"})
 public class ManejoCliente extends HttpServlet {
 
@@ -46,13 +55,18 @@ public class ManejoCliente extends HttpServlet {
           cliente1.categoria = request.getParameter("categoria");
           cliente1.direccion = request.getParameter("direccion");
      
-               
-                   
-           out.println(cliente1.id);
-            
-            
-            
-            
+          
+          //Crear archivo 
+          
+          try(){
+              
+          }catch(){
+              
+          }
+          
+          
+          
+          
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
