@@ -63,15 +63,18 @@ public class ManejoCliente extends HttpServlet {
           //Crear archivo 
           String ruta = request.getParameter("ruta");
          
-             
-             
-             
-             
-             
-             
-             
-             
+         
           try(FileWriter writer = new FileWriter(ruta)){
+              writer.write("---- Datos de Cliente ----");
+              writer.write("ID: " + cliente1.id + "\n");
+              writer.write("Nombre: " + cliente1.nombre + "\n");
+              writer.write("Categoría: " + cliente1.id + "\n");
+              writer.write("Dirección: " + cliente1.id + "\n");
+              
+              
+              
+              
+              
               
               
               
