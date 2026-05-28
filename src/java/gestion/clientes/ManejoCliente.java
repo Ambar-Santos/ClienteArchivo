@@ -71,7 +71,19 @@ public class ManejoCliente extends HttpServlet {
               writer.write("Categoría: " + cliente1.id + "\n");
               writer.write("Dirección: " + cliente1.id + "\n");
               
-              
+              //HTML 
+              out.println("<!DOCTYPE html>");
+              out.println("<html>");
+              out.println("<head>");
+              out.println("<title>Registrado Exitosamente</title>");
+              out.println("</head>");
+              out.println("<body>");
+              out.println("<h1>Su cliente ha sido registrado con exito!!</h1>");
+              out.println("<p>Puede consultar el archivo en la ruta:" + ruta +"</p>");
+              out.println("</body>");
+              out.println("</html>");
+         
+            
               
               
               
@@ -93,17 +105,7 @@ public class ManejoCliente extends HttpServlet {
           
           
             
-            out.println("<!DOCTYPE html>");
-            out.println("<html>");
-            out.println("<head>");
-            out.println("<title>Servlet ManejoCliente</title>");
-            out.println("</head>");
-            out.println("<body>");
-            out.println("<h1>Servlet ManejoCliente at " + request.getContextPath() + "</h1>");
-            out.println("</body>");
-            out.println("</html>");
-         
-            
+        
             
            
         }
