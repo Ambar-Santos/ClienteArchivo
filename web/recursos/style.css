@@ -11,14 +11,35 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     color: white;
     font-family: Abadi, Arial, comic-sans;
     text-align: center;
-    
+ 
 }
 
+fieldset{
+    display: block;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 input{
     display: block;
     width: 200px;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 4px;
    
+}
+
+
+#ruta{
+    width: 250px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+
+footer{
+    margin-top: 5px;
+}.celda {
+
 }

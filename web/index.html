@@ -20,14 +20,15 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
                 <form action="/ClienteArchivo/ManejoCliente" method="post">
                     <fieldset>
                         <legend>Ingrese datos del cliente</legend>
-                        <input required min="100000" max="999999" placeholder="ID(Ej: 8920)" type="number" name="id"><br>
-                        <input required placeholder="Nombre" type="text" name="nombre"><br>
-                        <input required placeholder="Categoria" type="text" name="categoria"><br>
-                        <input required placeholder="Dirección" type="text" name="direccion"><br>
+                        <input class="celda" required min="100000" max="999999" placeholder="ID(Ej: 8920)" type="number" name="id"><br>
+                        <input class="celda" required placeholder="Nombre" type="text" name="nombre"><br>
+                        <input class="celda" required placeholder="Categoria" type="text" name="categoria"><br>
+                        <input class="celda" required placeholder="Dirección" type="text" name="direccion"><br>
                         
                         <br>
                         <label>Ruta</label><br>
-                        <input required placeholder="Ej: C:/Personal/User/Documentos/text.txt" type="text" name="ruta"><br>
+         
+                        <input id="ruta" required placeholder="Ej: C:/Personal/User/Documentos/text.txt" type="text" name="ruta"><br>
                         <input type="submit" value="Enviar"><br>
                     </fieldset>
                 </form>
